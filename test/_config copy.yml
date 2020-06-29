@@ -6,13 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 theme                    : "minimal-mistakes-jekyll"
-minimal_mistakes_skin    : "Sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "My Blog Lake"
+title                    : "CloudFish"
 title_separator          : "-"
-subtitle                 : "Write up of the flakes of tech i am interested about"
+subtitle                 : "Development Test Site"
 name                     : "Anoop C"
 description              : "Write up of the flakes of tech i am interested about"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -20,14 +20,26 @@ baseurl                  : "/test"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "My Blog Lake" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "CloudFish" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               :  "disqus"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
@@ -46,7 +58,11 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "AnoopNairC"
+  username               : "mmistakes"
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
 og_image                 : "/assets/images/bio-photo.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -66,10 +82,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Anoop C"
+  name             : "Your Name"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Master of None. Senior Cloud Technical consultant."
-  location         : "London UK"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
   links:
     - label: "Your Website"
       icon: "fas fa-fw fa-link"
@@ -80,6 +96,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
 
 
 # Site Footer
@@ -91,6 +110,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
 
 
 # Reading Files
@@ -275,4 +297,3 @@ defaults:
       layout: single
       author_profile: false
       share: true
-
